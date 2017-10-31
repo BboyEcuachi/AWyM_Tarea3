@@ -1,0 +1,34 @@
+<!Doctype html>
+	<html>
+		<head>
+    		<title> Ecuaciones Cuadraticas </title>
+    		<script src="http://cdnjs.cloudflare.com/ajax/libs/mathjs/3.16.5/math.min.js"></script>
+	  		<script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+	  		<script src="https://wzrd.in/standalone/function-plot@1.14.0"></script>
+	  		<link rel="stylesheet" type="text/css" href="css/index.css">
+	  		<link rel="shortcut icon" type="image/png" href="img/apple-icon-precomposed.png"/>
+  		</head>
+  	<body>
+		<center>
+			<form name="f1">
+	    		<h1> Ecuaciones Cuadraticas </h1> <br><br>
+	    		<h3> Forma General: <img id="myImg" src="img/formulaCua.png"> </h3>
+	    		<br><br>
+	    		a : <input type="number" name="a" autocomplete="off" placeholder="a = ?">
+	    		b : <input type="number" name="b" autocomplete="off" placeholder="b = ?">
+	    		c : <input type="number" name="c" autocomplete="off" placeholder="c = ?">
+	  			<br><br>
+		  		<input type="button" value="Buscar Solucion/es" onclick="probarDibujar()">
+	  			<br><br>
+		  		<canvas id="miCanvas" width="500" height="100">Su navegador no soporta Canvas.</canvas>
+				<br><br>
+			</form>
+			<div id="plot" name="plot"></div>
+		</center>
+
+		<script type="text/javascript" src="js/cuadratica.js"></script>
+  	</body>
+  	<footer>
+		<a class="footer" href="index.html"> Volver </a>
+  	</footer>
+</html>
